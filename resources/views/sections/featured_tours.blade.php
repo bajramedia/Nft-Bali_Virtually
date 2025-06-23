@@ -36,7 +36,7 @@
                             <span class="text-xs color-text-white mt-1">{{ round($project['raised_amount'] / $project['target_amount'] * 100) }}%</span>
                         </div>
                         <div class="flex justify-center">
-                            <a href="{{ route('project.detail', $project['slug']) }}" class="btn-glow w-3/5 bg-gradient-mint-sky text-black font-semibold py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-all text-base font-aldrich">
+                            <a href="{{ route('Impact&Giving') }}" class="btn-glow w-3/5 bg-gradient-mint-sky text-black font-semibold py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-all text-base font-aldrich">
                                 Contribute Now
                             </a>
                         </div>

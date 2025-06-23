@@ -10,10 +10,12 @@ Route::get('/VirtualTours', [PageController::class, 'showVirtualTours'])->name('
 Route::get('/Nft', [PageController::class, 'showNftPage'])->name('Nft');
 // halaman impact & giving
 Route::get('/Impact&Giving', [PageController::class, 'showImpactGiving'])->name('Impact&Giving');
+// halaman roadmap
+Route::get('/Roadmap', [PageController::class, 'showRoadmap'])->name('Roadmap');
 // halaman funded project goa gajah
 Route::get('/funded-project-goa-gajah', [PageController::class, 'showFundedProjectGoaGajah'])->name('funded-project-goa-gajah');
 
 // routes untuk detail pages
 Route::get('/nfts/{slug}', [PageController::class, 'showNftDetail'])->name('nft.detail');
-Route::get('/projects/{slug}', [PageController::class, 'showProjectDetail'])->name('project.detail');
+// Route::get('/projects/{slug}', [PageController::class, 'showProjectDetail'])->name('project.detail');
 ?>

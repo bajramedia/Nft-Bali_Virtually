@@ -300,6 +300,12 @@ class PageController extends Controller
         return view('impact-giving', ['projects' => $projects]);
     }
 
+    // halaman roadmap
+    public function showRoadmap()
+    {
+        return view('roadmap');
+    }
+
     // halaman funded project goa gajah
     public function showFundedProjectGoaGajah()
     {
@@ -321,18 +327,18 @@ class PageController extends Controller
         return view('nft-detail', ['nft' => $nft]);
     }
 
-    // halaman detail project (dynamic projects)
-    public function showProjectDetail($slug)
-    {
-        $projects = $this->getProjectsData();
-        $project = collect($projects)->firstWhere('slug', $slug);
+    // halaman detail project (dynamic projects) - DISABLED
+    // public function showProjectDetail($slug)
+    // {
+    //     $projects = $this->getProjectsData();
+    //     $project = collect($projects)->firstWhere('slug', $slug);
         
-        if (!$project) {
-            abort(404, 'Project not found');
-        }
+    //     if (!$project) {
+    //         abort(404, 'Project not found');
+    //     }
         
-        return view('project-detail', ['project' => $project]);
-    }
+    //     return view('project-detail', ['project' => $project]);
+    // }
 
     // Helper method untuk calculate progress percentage
     public static function calculateProgress($raised, $target)

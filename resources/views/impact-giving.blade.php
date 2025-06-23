@@ -28,11 +28,11 @@
 
         {{-- Empower Culture Section --}}
         <div class="w-full flex justify-center mb-16">
-            <div class="rounded-2xl border border-gray-white p-8 md:p-12 max-w-4xl w-full" style="background-color: #272727;">
-                <h2 class="text-white text-2xl md:text-3xl font-semibold font-aldrich text-center mb-6">
+            <div class="rounded-2xl border border-gray-white p-8 md:p-12 max-w-[80%] w-full" style="background-color: #272727;">
+                <h2 class="text-white text-3xl md:text-4xl font-normal font-aldrich text-center mb-8">
                     Empower Culture. Support Communities
                 </h2>
-                <p class="color-text-white text-sm md:text-base leading-relaxed text-left">
+                <p class="color-text-white text-sm md:text-base leading-[2.3] text-left">
                     Join us in supporting projects that preserve <span class="text-mint">cultural traditions, protect natural landscapes, and strengthen local economies.</span> Your donations contribute directly to impactful initiatives, ensuring that local heritage and communities thrive for future generations. With transparent tracking, you can follow the progress of the projects and see the tangible difference your support makes.
                 </p>
             </div>
@@ -66,7 +66,7 @@
                                  
                              </div>
                              <div class="flex justify-center">
-                                 <a href="{{ route('project.detail', $project['slug']) }}" class="btn-glow w-3/5 bg-gradient-mint-sky color-black font-semibold py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-all text-base" style="font-family: 'Aldrich', sans-serif;">
+                                 <a href="{{ route('funded-project-goa-gajah') }}" class="btn-glow w-3/5 bg-gradient-mint-sky color-black font-semibold py-2 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-all text-base" style="font-family: 'Aldrich', sans-serif;">
                                      Contribute Now
                                  </a>
                              </div>

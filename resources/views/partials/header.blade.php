@@ -11,6 +11,7 @@
                   <a href="{{ route("VirtualTours") }}" class="hover:text-mint transition duration-300 font-aldrich" @if(Route::is("VirtualTours*")) style="color: #80ECB6;" @endif>Virtual Tours</a>
                   <a href="{{ route("Nft") }}" class="hover:text-mint transition duration-300 font-aldrich" @if(Route::is("Nft*")) style="color: #80ECB6;" @endif>NFT</a>
                   <a href="{{ route("Impact&Giving") }}" class="hover:text-mint transition duration-300 font-aldrich" @if(Route::is("Impact&Giving*")) style="color: #80ECB6;" @endif>Impact & Giving</a>
+                  <a href="{{ route("Roadmap") }}" class="hover:text-mint transition duration-300 font-aldrich" @if(Route::is("Roadmap*")) style="color: #80ECB6;" @endif>Roadmap</a>
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden">
@@ -28,6 +29,7 @@
                 <a href="{{ route('VirtualTours') }}" class="color-text-white hover:text-mint block px-3 py-3 rounded-md text-base transition duration-300 font-aldrich">Virtual Tours</a>
                 <a href="{{ route('Nft') }}" class="color-text-white hover:text-mint block px-3 py-3 rounded-md text-base transition duration-300 font-aldrich">NFT</a>
                 <a href="{{ route('Impact&Giving') }}" class="color-text-white hover:text-mint block px-3 py-3 rounded-md text-base transition duration-300 font-aldrich">Impact & Giving</a>
+                <a href="{{ route('Roadmap') }}" class="color-text-white hover:text-mint block px-3 py-3 rounded-md text-base transition duration-300 font-aldrich">Roadmap</a>
             </div>
         </div>
     </div>

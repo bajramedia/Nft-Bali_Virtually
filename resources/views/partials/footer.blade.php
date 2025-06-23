@@ -1,18 +1,19 @@
 <footer class="relative bg-[#121212] py-12 md:py-16 overflow-hidden font-aldrich color-text-white">
-    <div class="mx-auto px-4 w-[90%] flex flex-col md:flex-row md:justify-between md:items-start text-gray-400">
+    <div class="mx-auto px-4 w-[85%] flex flex-col md:flex-row md:justify-between md:items-start text-gray-400">
         <!-- Logo & Copyright -->
         <div class="mb-8 md:mb-0 flex flex-col gap-6">
             <div class="flex items-center gap-3 mb-18">
-                <img src="images/logo.png" alt="Logo Bali Virtually" class="h-10 w-auto">
+                <img src="{{ asset('images/Logo.png') }}" alt="Logo Bali Virtually" class="h-10 w-auto">
                 <span class="text-2xl font-bold logo-color tracking-wide font-aldrich">BALI VIRTUALLY</span>
             </div>
             <p class="text-sm color-text-white">&copy; {{ date('Y') }}. Bali Virtually. All right reserved</p>
         </div>
         <!-- Menu -->
         <div class="mb-8 md:mb-0 flex flex-col color-text-white gap-4 text-sm md:text-base">
-            <a href="#" class="hover:text-mint transition duration-300">Virtual Tours</a>
-            <a href="#" class="hover:text-mint transition duration-300">NFT</a>
-            <a href="#" class="hover:text-mint transition duration-300">Impact & Giving</a>
+            <a href="{{ route('VirtualTours') }}" class="hover:text-mint transition duration-300">Virtual Tours</a>
+            <a href="{{ route('Nft') }}" class="hover:text-mint transition duration-300">NFT</a>
+            <a href="{{ route('Impact&Giving') }}" class="hover:text-mint transition duration-300">Impact & Giving</a>
+            <a href="{{ route('Roadmap') }}" class="hover:text-mint transition duration-300">Roadmap</a>
 
             <div class="flex gap-4 mt-6">
                 <a href="#" aria-label="X" class="hover:text-mint transition duration-300 color-text-white">
