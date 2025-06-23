@@ -19,6 +19,20 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+/* Font Family Utilities */
+.font-aldrich {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.font-urbanist {
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Color Utilities */
+.text-mint {
+    color: var(--color-mint);
+}
+
 .logo-color {
     background: var(--gradient-mint-sky);
     -webkit-background-clip: text;
@@ -66,6 +80,10 @@ body {
 /* Button Glow Effects */
 .btn-glow {
     transition: all 0.3s ease-in-out;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
 
 .btn-glow:hover {
@@ -98,73 +116,262 @@ body {
     animation: ease-in-out;
 }
 
+/* SVG Map Styling */
+.bali-svg-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
+/* Region hover effects - Applied via JavaScript to SVG paths */
+.region-area {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
+.region-area:hover {
+    filter: drop-shadow(0 0 15px rgba(128, 236, 182, 0.8)) 
+            drop-shadow(0 0 25px rgba(121, 173, 238, 0.4));
+}
 
- /* SVG Map Styling */
-    .bali-svg-map {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        overflow: hidden;
-    }
-    
-    /* Region hover effects - Applied via JavaScript to SVG paths */
-    .region-area {
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .region-area:hover {
-        filter: drop-shadow(0 0 15px rgba(128, 236, 182, 0.8)) 
-                drop-shadow(0 0 25px rgba(121, 173, 238, 0.4));
-    }
-    
-    /* Tooltip styling */
-    .region-tooltip {
-        position: fixed;
-        background: linear-gradient(135deg, rgba(31, 41, 55, 0.95), rgba(17, 24, 39, 0.95));
-        color: white;
-        padding: 12px 16px;
-        border-radius: 12px;
-        font-size: 14px;
-        font-weight: 600;
-        white-space: nowrap;
-        border: 1px solid rgba(128, 236, 182, 0.3);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-        pointer-events: none;
-        z-index: 1000;
-        opacity: 0;
-        transform: translateY(10px);
-        transition: all 0.3s ease;
-        backdrop-filter: blur(10px);
-    }
-    
-    .region-tooltip::after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 8px solid transparent;
-        border-top-color: rgba(31, 41, 55, 0.95);
-    }
-    
-    .region-tooltip.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .region-tooltip .region-name {
-        display: block;
-        color: #80ECB6;
-        margin-bottom: 4px;
-        font-size: 16px;
-    }
-    
-    .region-tooltip .region-action {
-        display: block;
-        color: #d1d5db;
-        font-size: 12px;
-        font-weight: 400;
-    }
+/* Tooltip styling */
+.region-tooltip {
+    position: fixed;
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.95), rgba(17, 24, 39, 0.95));
+    color: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 1px solid rgba(128, 236, 182, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.region-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid transparent;
+    border-top-color: rgba(31, 41, 55, 0.95);
+}
+
+.region-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.region-tooltip .region-name {
+    display: block;
+    color: #80ECB6;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.region-tooltip .region-action {
+    display: block;
+    color: #d1d5db;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Sticky Navbar Styles - Bikin navbar keren pas di-scroll */
+#main-header {
+    /* Background transparan awalnya, berubah pas di-scroll via JavaScript */
+    background: transparent;
+}
+
+/* Smooth transition untuk semua element navbar */
+#main-header,
+#main-header nav {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling pas navbar udah di-scroll (ditambah via JavaScript) */
+#main-header.scrolled {
+    background: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== NFT PAGE STYLES ===== */
+/* Style khusus buat tombol filter region NFT */
+.region-filter-btn {
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    min-width: 100px;
+    white-space: nowrap;
+}
+
+/* Border gradient effect untuk active dan hover */
+.border-gradient-active {
+    border: 2px solid #80ECB6;
+    background-color: #2B3932;
+    color: #80ECB6 !important;
+    font-weight: 600;
+}
+
+.region-filter-btn:hover {
+    border: 2px solid transparent;
+    background: linear-gradient(#2B3932, #2B3932) padding-box,
+                linear-gradient(135deg, #80ECB6, #79ADEE) border-box;
+    color: #80ECB6 !important;
+    font-weight: 600;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(128, 236, 182, 0.2);
+}
+
+.region-filter-btn.active {
+    border: 2px solid #80ECB6;
+    background-color: #2B3932 !important;
+    color: #80ECB6 !important;
+    font-weight: 600;
+}
+
+/* Smooth transitions buat NFT cards */
+.nft-card {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nft-card:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== VIRTUAL TOURS PAGE STYLES ===== */
+/* Style tambahan buat smooth transition tour cards */
+.tour-card {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.filter-btn.active {
+    background: var(--color-mint) !important;
+    color: var(--color-black) !important;
+}
+
+/* ===== TEAM SECTION STYLES ===== */
+/* Override box-shadow hover effect buat team cards */
+.team-card:hover {
+    box-shadow: none !important;
+}
+
+/* Smooth transition buat text content */
+.member-description,
+.member-full-bio {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ===== UTILITY CLASSES - MENGGANTIKAN INLINE STYLES ===== */
+/* Background utilities */
+.bg-hero-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-dark-heavy {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Font family utilities (aldrich sudah ada, tambah yang lain) */
+.font-aldrich-title {
+    font-family: 'Aldrich', sans-serif;
+    color: var(--color-white);
+}
+
+/* Progress bar utility */
+.progress-bar-fill {
+    background: linear-gradient(to right, #80ECB6, #79ADEE);
+    height: 0.625rem; /* h-2.5 */
+    border-radius: 9999px;
+    transition: all 0.5s ease;
+}
+
+/* Progress Bar Background - Bagian hitam yang terpisah */
+.progress-background {
+    position: relative;
+    /* Background ini yang jadi container utama */
+    min-width: 0;
+}
+
+/* Progress Overflow Container - Buat hide kelebihan */
+.progress-overflow-container {
+    /* Ini yang ngontrol overflow, terpisah dari background */
+    overflow: hidden;
+    border-radius: 9999px; /* Rounded-full */
+    /* Pastiin container ini nggak keluar dari background */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Progress Bar Fill - Yang bergerak sesuai persentase */
+.progress-overflow-container .progress-bar-fill {
+    /* Bar ini bisa 300% width tapi bakal di-clip/dipotong sama container */
+    position: relative;
+    height: 100%;
+    /* NGGAK ADA max-width, biar bisa jalan sampai 300% */
+    /* Tapi container parent punya overflow:hidden yang bakal "potong" kelebihannya */
+    transition: width 0.5s ease-in-out, background 0.3s ease;
+    border-radius: 9999px;
+    /* Pastiin bar ini bisa extend keluar tapi di-clip */
+    min-width: 0;
+}
+
+/* Hover effect buat progress bar - lebih smooth */
+.progress-background:hover .progress-bar-fill {
+    /* Bikin bar agak glow pas di-hover */
+    box-shadow: 0 0 15px rgba(128, 236, 182, 0.6);
+    filter: brightness(1.1);
+}
+
+/* Animation delays */
+.animate-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-400 {
+    animation-delay: 0.4s;
+}
+
+/* Blur effects */
+.blur-soft {
+    filter: blur(40px);
+}
+
+.blur-medium {
+    filter: blur(60px);
+}
+
+.blur-heavy {
+    filter: blur(80px);
+}
+
+/* Gradient backgrounds yang sering dipake */
+.bg-gradient-overlay {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 50%, #121212 100%);
+}
+
+/* Card background */
+.card-bg-dark {
+    background-color: #262626;
+}
+
+/* Main content dark background */
+.main-bg-dark {
+    background-color: #1a1a1a;
+}

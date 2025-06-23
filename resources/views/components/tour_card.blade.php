@@ -3,7 +3,7 @@
     <div class="p-6 flex flex-col flex-grow">
         <h3 class="text-xl font-semibold mb-2">{{ $title }}</h3>
         <p class="text-gray-400 text-sm mb-4 flex-grow">{{ $description }}</p>
-        <a href="#" class="mt-auto bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md text-center transition duration-300">
+        <a href="#" class="mt-auto bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded-md text-center flex items-center justify-center transition duration-300">
             Learn More
         </a>
     </div>

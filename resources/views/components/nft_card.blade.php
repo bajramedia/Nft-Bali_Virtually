@@ -1,23 +1,24 @@
 {{-- resources/views/components/nft_card.blade.php --}}
 {{-- Perhatikan: kita menggunakan sintaks Alpine.js (x-bind, x-text) karena view ini di-include di dalam scope Alpine --}}
 
-<div class="rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-700 hover:border-teal-400 transition duration-300 transform hover:-translate-y-1 h-[360px] w-[340px] items-center" style="background-color: #262626;">
-    <div class="flex flex-col flex-grow gap-3 px-5 pt-5 pb-4 items-center text-center w-full">
-        <!-- Avatar Image -->
-        <div class="w-50 h-50 overflow-hidden flex items-center justify-center">
-            <img src="{{ asset('images/Vr-vg.png') }}" alt="{{ $title ?? 'NFT Avatar' }}" class="w-full h-full object-cover">
-        </div>
-        
+<div class="rounded-2xl shadow-xl overflow-hidden flex flex-col bg-whi-900 hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl h-[420px] w-full max-w-[420px] min-w-[280px] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] border border-white-700 hover:border-teal-400 mx-auto">
+    <!-- Image Container -->
+    <div class="w-full h-[240px] overflow-hidden bg-gray-800">
+        <img src="{{ $image ?? asset('images/Vr-vg.png') }}" alt="{{ $title ?? 'NFT Avatar' }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+    </div>
+    
+    <!-- Content Container -->
+    <div class="flex-1 flex flex-col justify-between p-6 text-center">
         <!-- Title -->
-        <div class="w-full flex flex-col mt-2">
-            <h3 class="text-lg font-semibold color-text-white leading-tight text-center">
+        <div class="mb-4">
+            <h3 class="text-lg font-bold text-white leading-tight">
                 {{ $title ?? 'NFT Title' }}
             </h3>
         </div>
         
         <!-- Button -->
-        <div class=" w-full mt-auto flex justify-center items-center mb-1">
-            <a href="{{ route('nft.detail', $slug ?? '#') }}" class="btn-glow bg-gradient-to-r from-[#80ECB6] to-[#79ADEE] hover:from-[#79ADEE] hover:to-[#80ECB6] text-black font-semibold py-3 px-8 rounded-lg text-base transition duration-300 shadow-md hover:shadow-lg transform hover:scale-105">
+        <div class="w-full">
+            <a href="{{ route('nft.detail', $slug ?? '#') }}" class="btn-glow bg-gradient-to-r from-[#80ECB6] to-[#79ADEE] hover:from-[#79ADEE] hover:to-[#80ECB6] text-black font-semibold py-3 px-6 rounded-lg text-sm w-full text-center flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                 View Details
             </a>
         </div>

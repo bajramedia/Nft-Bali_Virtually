@@ -14,7 +14,6 @@ Route::get('/Impact&Giving', [PageController::class, 'showImpactGiving'])->name(
 Route::get('/funded-project-goa-gajah', [PageController::class, 'showFundedProjectGoaGajah'])->name('funded-project-goa-gajah');
 
 // routes untuk detail pages
-Route::get('/tours/{slug}', [PageController::class, 'showTourDetail'])->name('tour.detail');
 Route::get('/nfts/{slug}', [PageController::class, 'showNftDetail'])->name('nft.detail');
 Route::get('/projects/{slug}', [PageController::class, 'showProjectDetail'])->name('project.detail');
 ?>
