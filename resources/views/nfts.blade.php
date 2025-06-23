@@ -39,10 +39,10 @@
         <div class="w-full flex justify-center mb-24">
             <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-full">
                 @php
-                    $regions = array_merge(['All'], collect($nfts)->pluck('category')->unique()->sort()->values()->all());
+                    $regions = ['Gianyar', 'Tabanan', 'Denpasar', 'Badung', 'Karangasem', 'Buleleng', 'Bangli', 'Klungkung', 'Jembrana', 'N. Penida'];
                 @endphp
                 @foreach($regions as $index => $region)
-                    <button onclick="filterNfts('{{ $region }}')" class="region-filter-btn px-6 py-2.5 text-sm font-medium text-white bg-transparent border border-gray-400 rounded-lg transition-all duration-300 hover:border-gradient-active focus:outline-none {{ $region === 'All' ? 'active border-gradient-active' : '' }}" data-region="{{ $region }}">
+                    <button onclick="filterNfts('{{ $region }}')" class="region-filter-btn px-6 py-2.5 text-sm font-medium text-white bg-transparent border border-gray-400 rounded-lg transition-all duration-300 hover:border-gradient-active focus:outline-none {{ $region === 'Gianyar' ? 'active border-gradient-active' : '' }}" data-region="{{ $region }}">
                         {{ $region }}
                     </button>
                 @endforeach

@@ -71,12 +71,11 @@ window.filterNfts = function (selectedRegion) {
         activeButton.classList.remove('border-gray-400');
     }
 
-    // Filter NFT cards
+    // Filter NFT cards - hanya show yang sesuai region
     nftCards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
 
-        // Kalau pilih "All", tampilkan semua cards
-        if (selectedRegion === 'All' || cardCategory === selectedRegion) {
+        if (cardCategory === selectedRegion) {
             card.style.display = 'block';
             // Animasi fade in
             card.style.opacity = '0';
@@ -340,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inisialisasi interactive map kalau ada
     initializeInteractiveMap();
 
-    // Set default filter untuk NFT page - default ke All
+    // Set default filter untuk NFT page - default ke Gianyar
     const nftContainer = document.getElementById('nft-cards-container');
     if (nftContainer) {
         // Reset semua button filter di NFT dulu
@@ -350,13 +349,13 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.classList.add('border-gray-400');
         });
 
-        // Set "All" yang aktif dan filter langsung
-        const defaultNftButton = document.querySelector('[data-region="All"]');
+        // Set "Gianyar" yang aktif dan filter langsung
+        const defaultNftButton = document.querySelector('[data-region="Gianyar"]');
         if (defaultNftButton) {
             defaultNftButton.classList.add('active', 'border-gradient-active');
             defaultNftButton.classList.remove('border-gray-400');
-            // Auto filter ke All
-            filterNfts('All');
+            // Auto filter ke Gianyar
+            filterNfts('Gianyar');
         }
     }
 

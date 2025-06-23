@@ -1,5 +1,5 @@
 <section class="py-16 md:py-24 mt-8">
-    <div class="w-[84   %] mx-auto text-center">
+    <div class="w-[84%] mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-16 color-text-white font-aldrich">Meet The Team</h2>
         <div class="grid grid-cols-1 mt-12 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-none justify-items-center">
             @php
