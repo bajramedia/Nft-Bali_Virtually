@@ -1,7 +1,7 @@
 {{-- resources/views/components/nft_card.blade.php --}}
 {{-- Perhatikan: kita menggunakan sintaks Alpine.js (x-bind, x-text) karena view ini di-include di dalam scope Alpine --}}
 
-<div class="rounded-2xl shadow-xl overflow-hidden flex flex-col bg-whi-900 hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl h-[420px] w-full max-w-[420px] min-w-[280px] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] border border-white-700 hover:border-teal-400 mx-auto">
+<div style="background-color: #2B2B2B;" class="rounded-2xl shadow-xl overflow-hidden flex flex-col  hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl h-[420px] w-full max-w-[420px] min-w-[280px] sm:max-w-[350px] md:max-w-[380px] lg:max-w-[400px] border border-white-700 hover:border-teal-400 mx-auto">
     <!-- Image Container -->
     <div class="w-full h-[240px] overflow-hidden bg-gray-800">
         <img src="{{ $image ?? asset('images/Vr-vg.png') }}" alt="{{ $title ?? 'NFT Avatar' }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">

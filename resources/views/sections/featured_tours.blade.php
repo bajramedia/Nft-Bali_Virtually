@@ -18,7 +18,7 @@
             @endphp
 
             @foreach ($featuredProjects as $project)
-                <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-lg flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:scale-105">
+                <div style="background-color: #2B2B2B;" class="rounded-2xl overflow-hidden shadow-lg flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:scale-105">
                     <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" class="w-full h-auto object-cover">
                     <div class="p-6 flex flex-col flex-1 w-full">
                         <h3 class="text-xl font-semibold text-white mb-2 mt-2 text-center">{{ $project['short_title'] ?? $project['title'] }}</h3>

@@ -46,7 +46,7 @@
             
             <div class="w-[89%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                  @foreach ($projects as $project)
-                     <div class="bg-[#232323] rounded-2xl overflow-hidden shadow-lg flex flex-col items-center">
+                     <div class="bg-[#2B2B2B] rounded-2xl overflow-hidden shadow-lg flex flex-col items-center">
                          <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" class="w-full h-auto object-cover">
                          <div class="p-6 flex flex-col flex-1 w-full">
                              <h3 class="text-xl font-semibold text-white mb-2 mt-2 text-center">{{ $project['short_title'] ?? $project['title'] }}</h3>
