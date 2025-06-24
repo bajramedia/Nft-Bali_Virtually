@@ -1,5 +1,5 @@
 <footer class="relative bg-[#121212] py-12 md:py-16 overflow-hidden font-aldrich color-text-white">
-    <div class="mx-auto px-4 w-[85%] flex flex-col md:flex-row md:justify-between md:items-start text-gray-400">
+    <div class="mx-auto px-4 max-w-[85%] flex flex-col md:flex-row md:justify-between md:items-start text-gray-400">
         <!-- Logo & Copyright -->
         <div class="mb-8 md:mb-0 flex flex-col gap-6">
             <div class="flex items-center gap-3 mb-18">

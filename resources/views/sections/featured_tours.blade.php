@@ -2,10 +2,10 @@
     <div class="container mx-auto px-4">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-semibold mb-6 font-aldrich text-white">Impact &amp; Giving</h2>
-            <p class="text-white max-w-6xl mx-auto mb-10 text-base md:text-lg">
+            <p class="text-white max-w-7xl mx-auto mb-10 text-base md:text-lg">
                 Every Bali Virtually NFT is more than just a digital artwork. It <span class="text-teal-400 font-semibold">carries the essence of culture, spirituality, and social responsibility.</span> Through this collection, the sacred legends of Bali are immortalized for the world, while directly supporting cultural preservation and the well-being of local communities. 
             </p>
-            <p class="text-white max-w-6xl mx-auto text-base md:text-lg">
+            <p class="text-white max-w-7xl mx-auto text-base md:text-lg">
                 Each NFT sold is not just a digital collectible, but also a part of an effort to create positive change. We are committed to <span class="text-teal-400 font-semibold">donating 20%</span> of each NFT sale to the people of Bali. The funds raised will be used to support education, preserve culture, and promote sustainable tourism.
             </p>
         </div>

@@ -1,5 +1,5 @@
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out" id="main-header">
-    <div class="mx-auto px-4 w-[85%]">
+    <div class="mx-auto px-4 max-w-[85%]">
         <nav class="flex items-center justify-between py-6 transition-all duration-300">
             <div>
                 <a href="/" class="text-2xl font-bold text-white flex items-center">
