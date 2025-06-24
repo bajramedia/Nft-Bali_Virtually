@@ -7,9 +7,9 @@
 @section('content')
 
 {{-- Hero Section --}}
-<section class="relative h-screen w-full flex items-center justify-center mb-12 sm:mb-16 lg:mb-20" style="background-image: url('{{ asset('images/high-angle-shot-foggy-hills 1.jpg') }}'); background-size: cover; background-position: center;">
+<section class="relative w-full flex items-center justify-center mb-12 sm:mb-16 lg:mb-20" style="background-image: url('{{ asset('images/roadmapbg.png') }}'); background-size: cover; background-position: center; height: auto; min-height: 100vh;">
     <div class="absolute inset-0 overlay-dark-heavy"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center w-full h-full">
+    <div class="relative z-10 flex flex-col items-center justify-center w-full h-full py-20">
         <div class="mx-auto px-4 w-[85%] text-center">
             <h1 class="font-aldrich color-text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 sm:mb-8">
                 Background & Roadmap
@@ -30,7 +30,7 @@
                 </h2>
                 
                 <div class="space-y-6 sm:space-y-8 max-w-[85%] mx-auto">
-                    <p  class="color-text-white text-base sm:text-lg leading-[2] text-justify">
+                    <p  class="color-text-white text-base sm:text-lg leading-[1.5] text-justify">
                         Bali Virtually was born from my personal journey as the founder. For several years (2021 - now), I worked as a 
                         freelance photographer and videographer documenting the social programs of a DPR RI member 
                         representing Bali. This role brought me across many remote villages, witnessing firsthand the distribution of 
@@ -38,28 +38,28 @@
                         outreach.
                     </p>
                     
-                    <p class="color-text-white text-base sm:text-lg leading-[2] text-justify">
+                    <p class="color-text-white text-base sm:text-lg leading-[1.5] text-justify">
                         While working, I often saw how deeply grateful local residents were to receive attention and support from the 
                         government. It moved me. At the same time, I began to feel a strong desire to help, but I didn't know where to 
                         start or what I could do.
                     </p>
                     
-                    <p  class="color-text-white text-base sm:text-lg leading-[2] text-justify">
+                    <p  class="color-text-white text-base sm:text-lg leading-[1.5] text-justify">
                         Three years later, life gave me a new path I became a lecturer at a private IT university in Bali, specializing in 
                         Visual Communication Design with a focus on Virtual Interactive Experience Design with academic 
                         responsibilities, I must teach, research, and serve the community. That's when I realized "Maybe this is the 
                         path I was meant to take to make a real impact."
                     </p>
                     
-                    <p class="color-text-white text-base sm:text-lg leading-[1] text-justify font-medium italic" >
+                    <p class="color-text-white text-base sm:text-lg leading-3 text-justify font-medium italic" >
                         With my background in IT, art, and experience in virtual tour research, I began to ask:
                     </p>
                     
-                    <p class="color-text-white text-base sm:text-lg leading-[1] text-justify font-medium italic">
+                    <p class="color-text-white text-base sm:text-lg leading-3 text-justify font-medium italic">
                         "What can I do with the knowledge and position I have now?"
                     </p>
                     
-                    <p class="color-text-white text-base sm:text-lg leading-[1] text-justify font-medium italic">
+                    <p class="color-text-white text-base sm:text-lg leading-3 text-justify font-medium italic">
                         "How can I contribute to society while building a meaningful livelihood?"
                     </p>
                     

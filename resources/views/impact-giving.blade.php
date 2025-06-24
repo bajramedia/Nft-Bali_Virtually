@@ -18,17 +18,17 @@
 
 {{-- Main Content --}}
 <main class="relative py-16 md:py-20 min-h-screen overflow-hidden">
-    <div class="mx-auto px-4 w-[90%] relative z-10">
+    <div class="mx-auto px-4 w-[95%] relative z-10">
         {{-- Description Section --}}
         <div class="w-full text-center mb-16">
-            <p class="color-text-white text-sm md:text-base leading-relaxed max-w-6xl mx-auto">
-                Each NFT sold is not just a digital collectible, but also a part of an effort to create positive change. We are committed to donating 20% of each NFT sale to the people of Bali. The funds raised will be used to support education, preserve culture, and improve the well-being of the communities that contribute to maintaining Bali's heritage. With every NFT purchase, you are playing a role in creating a better future for Bali's local communities.
+            <p class="color-text-white font-medium text-base md:text-lg leading-relaxed max-w-7xl mx-auto">
+                Each NFT sold is not just a digital collectible, but also a part of an effort to create positive change. We are <span class="text-mint">committed to donating 20%</span> of each NFT sale to the people of Bali. The funds raised will be used to support education, preserve culture, and improve the well-being of the communities that contribute to maintaining Bali's heritage. With every NFT purchase, you are playing a role in creating a better future for Bali's local communities.
             </p>
-        </div>
+        </div></span>
 
         {{-- Empower Culture Section --}}
         <div class="w-full flex justify-center mb-16">
-            <div class="rounded-2xl border border-gray-white p-8 md:p-12 max-w-[80%] w-full" style="background-color: #272727;">
+            <div class="rounded-2xl border border-gray-white p-8 md:p-12 max-w-[89%] w-full" style="background-color: #272727;">
                 <h2 class="text-white text-3xl md:text-4xl font-normal font-aldrich text-center mb-8">
                     Empower Culture. Support Communities
                 </h2>
@@ -44,7 +44,7 @@
                 Funded Project
             </h2>
             
-            <div class=" w-[95%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="w-[89%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                  @foreach ($projects as $project)
                      <div class="bg-[#232323] rounded-2xl overflow-hidden shadow-lg flex flex-col items-center">
                          <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" class="w-full h-auto object-cover">

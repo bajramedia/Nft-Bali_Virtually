@@ -37,7 +37,7 @@
 
         {{-- Region Filter --}}
         <div class="w-full flex justify-center mb-24">
-            <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-[90%]">
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-[90%] mx-auto">
                 @php
                     $regions = ['Gianyar', 'Tabanan', 'Denpasar', 'Badung', 'Karangasem', 'Buleleng', 'Bangli', 'Klungkung', 'Jembrana', 'N. Penida'];
                 @endphp
@@ -50,8 +50,8 @@
         </div>
 
         {{-- NFT Cards --}}
-        <div class="w-[95%] mx-auto flex justify-center pb-32" id="nft-gallery">
-            <div id="nft-cards-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 md:gap-10 lg:gap-12 max-w-7xl justify-content-center w-full px-6 md:px-8 lg:px-10">
+        <div class="w-full mx-auto flex justify-center pb-32"  id="nft-gallery">
+            <div id="nft-cards-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 md:gap-10 lg:gap-12 max-w-7xl justify-content-center w-full px-6 md:px-8 lg:px-10">
                 @foreach($nfts as $nft)
                     <div class="nft-card mb-8" data-category="{{ $nft['category'] }}">
                         @include('components.nft_card', [

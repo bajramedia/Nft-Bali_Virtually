@@ -32,7 +32,7 @@
 
             {{-- Region Filter --}}
             <div class="w-full flex justify-center mb-24">
-                <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-[90%]">
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4 max-w-[95%]">
                     @php
                     $regions = ['Gianyar', 'Tabanan', 'Denpasar', 'Badung', 'Karangasem', 'Buleleng', 'Bangli', 'Klungkung', 'Jembrana', 'N. Penida'];
                 @endphp

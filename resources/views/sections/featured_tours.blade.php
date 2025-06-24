@@ -1,5 +1,5 @@
 <section class="py-16 md:py-24">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 max-w[85%]">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-semibold mb-6 font-aldrich text-white">Impact &amp; Giving</h2>
             <p class="text-white max-w-7xl mx-auto mb-10 text-base md:text-lg">
